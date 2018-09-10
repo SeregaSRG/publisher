@@ -1,0 +1,239 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    background-color:#ECEFF1;
+}
+
+.no-display {
+    display: none;
+}
+
+.center {
+    margin: 0 auto!important;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.add {
+    cursor: pointer;
+    position: fixed!important;
+    right: 5vw!important;
+    bottom: 5vw!important;
+    z-index: 999;
+}
+
+.add-2 {
+    cursor: pointer;
+    position: fixed!important;
+    right: 5vw!important;
+    bottom: 65px!important;
+    z-index: 999;
+}
+
+#loading {
+    margin: 0 auto;
+}
+
+.no-select {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.close {
+    right: 10px;
+    color:#BDBDBD;
+    cursor: pointer;
+}
+
+.full-btn {
+    width: 100%;
+}
+
+.left-line {
+    border-left: 2px solid #ccc; /* Параметры линии */
+    margin-left: 14px; /* Отступ слева */
+    padding-left: 20px; /* Расстояние от линии до текста */
+}
+
+.left-line label {
+    color: #607D8B;
+}
+
+.left-line i {
+    font-size: 16px;
+}
+
+.is-focused i {
+    display: none;
+}
+
+@media screen and (max-width:640px) {
+    .pop-up--main{
+        z-index: 500!important;
+        display: none;
+        position: fixed;
+        width: calc(100% - 16px)!important;
+        height: calc(100% - 16px);
+        overflow: scroll;
+    }
+}
+@media screen and (min-width:640px) {
+    .pop-up--main{
+        z-index: 500!important;
+        display:none;
+        top: 68px;
+        height: calc(100% - 89px - 32px);
+        min-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.pop-up--main .mdl-card__supporting-text {
+    width: auto!important;
+}
+
+.pop-up--main .mdl-card__actions {
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+}
+.pop-up--main__content {
+    width: 100%;
+    height:calc(100% - 53px);
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.left-line--input-circle {
+    width: 10px;
+    height: 10px;
+    background: grey;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin-left: -36px;
+}
+
+.filterMenu_cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 10px 0px 10px;
+}
+
+.filterMenu {
+    max-width: 600px;
+    height: 49px;
+    width: 100%;
+    display: table;
+}
+
+.transition {
+    transition: 0.4s;
+}
+
+#tt3 {
+    color: darkgray; float: right;
+}
+
+#mapSurface {
+    width: 100vw;
+    height: calc(100vh - 154px);
+}
+
+#mapSurface-big {
+    width: 100%;
+    height: calc(100% - 16px);
+}
+
+.list-action {
+    width: 300px;
+}
+
+.materialButtons{
+    cursor: pointer;
+}
+
+.forMap {
+    color: #1565C0;
+    text-decoration: none;
+    border-bottom: dotted 1px #6eb3d1;
+    cursor: pointer;
+}
+
+.pos_rel {
+    position: relative;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+.pop-up--full-light {
+    z-index: 500;
+    display: none;
+    position: fixed;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+}
+
+.my-tabs__tab-bar{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:space-between;-ms-flex-line-pack:justify;align-content:space-between;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;height:48px;padding:0;margin:0;border-bottom:1px solid #e0e0e0}
+.my-tabs__tab{margin:0;border:none;padding:0 24px;float:left;position:relative;display:block;text-decoration:none;height:48px;line-height:48px;text-align:center;font-weight:500;font-size:14px;text-transform:uppercase;color:rgba(0,0,0,.54);overflow:hidden}
+
+.my-tabs__tab:after {
+    transform: scaleX(0);
+    height:1px;
+    width:100%;
+    display:block;
+    content:" ";
+    bottom:0;left:0;
+    position:absolute;
+    background:rgb(96,125,139);
+    transition: transform 150ms ease-in-out;
+}
+
+.my-tabs__tab.active:after {
+    transform: scaleX(1);
+}
+
+.settings-icon {
+    border: 1px dotted black;
+    border-radius: 6px;
+    color: #767676;
+}
+
+#friends-card h5 {
+    margin: 10px 0 10px !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.mdl-layout__header-row a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    .page-content{
+        overflow-x: scroll;
+    }
+}
+
+.clip {
+    max-width: 185px;    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
